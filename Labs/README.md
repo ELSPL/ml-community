@@ -1,5 +1,8 @@
 # Machine Learning Lab
 
+This Lab Structure is the path followed by me while I interned at ELSPL. This learning resource is based on what I learnt in ML and 
+and I hope it can be a pathway for others entering in the field as well!
+ -Jay Paranjape(Intern ,1st Year Computer Science IIT Delhi)
 ## Lab 0 - Getting Started, Git and Pandas
 * Python - Basics, Matplotlib, Seaborn
 * Pandas - Dataframe basics, importing datasets, managing data, data insights
