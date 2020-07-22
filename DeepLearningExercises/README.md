@@ -1,4 +1,4 @@
-# Deep Learning Lab
+# Deep Learning Labs
 
 As computation power increases everyday, models that are more complex and can process more data become possible. This field, better known as deep learning is
 a subset of Machine Learning, the buzz world in the industry and academia alike, with some added benefits. In Machine Learning tasks, the programmer must
@@ -22,7 +22,46 @@ The lab is divided broadly into three parts:
  
  ## Lab 2 - Image Segmentation
  
-1.) Labs in Keras
- *   Vision
-     * Lab 1 - MNIST 
-     * Lab 2 - 
+ In this lab, you will perform image segmentation on the Pet dataset. Given an image, you will train the model to find regions in the image which are pets. Image segmentation,or classifying each pixel as belonging to an object or not, finds applications from medical science where it is used to detect diseases like brain tumor, to industry, where it is used for Non Destructive Analysis of components.
+ 
+ ## Lab 3 - Object Detection
+ 
+ In this lab, you will perform the task of object detection on the COCO dataset. This problem involves making a boundary box around a specific object, and then identifying what that object is. This task is useful for applications such as tracking. Many industries have recently built systems using Object Detection to detect whether an employee has wore a mask or not.
+ 
+ ## Lab 4 - Sentiment Classification
+ 
+ In this lab, you will build a model which takes a movie review as input and classifies it as being positive or negative. You will be using the dataset provided by IMDB for this task. Sentiment analysis has gained a lot of interest since it is directly connected with humanitarian psychology. Platforms like Twitter and Facebook perform this task to filter any messages which may be offensive.
+ 
+ ## Lab 5 - Using pretrained embeddings for text classification
+ 
+ In this lab, you will again perform the task of text classification, but using pre-trained word embeddings. You will be using GloVe embeddings for classifying News Dataset. Word embeddings are vector representations of words. For example, the vector of 'king' minus the vector of 'queen' plus the vector of 'girl' should be very close to the vector of 'boy'. Such semantic meanings are captured using word embeddings. Here, each of the dimensions in the vector space represent some phsical quantity as being present or absent and to what degree. You will see that using these makes it much easier to perform such tasks.
+ 
+ ## Lab 6 - Question Answering
+ 
+ In this lab, you will train a model to extract answers to an input question from an input paragraph. The dataset used for this is the SQuAD dataset or the Stanford Question Answering Dataset. We will build a model known as BERT transformer for this purpose. Question answering is being used to generate medical helper bots for assisting doctors.
+ 
+ ## Lab 7 - Sequence to Sequence Modelling
+
+In this lab, you will carry out addition of two numbers which are represented as strings. Though this is a simple task by converting them to integers, solving it as an NLP problem helps understand the basics of sequence to sequence modelling, where the input is a sequence of text, and the output is also a sequence of text which may be of same or different length. This is used in translating one language to other.
+
+## Lab 8 - Using Auto Encoders for Anomaly Detection
+
+In this lab, you will work with time series data. The task is to find out whether there is an anomaly seen in the input data. The model is an autoencoder, which is trained on normal data. The autoencoder encodes the data and then decodes it again to form the original data. When itcomes across an anomaly during testing, it outputs a huge loss, signalling an anomaly. This is used on a large scale for detecting anomalies in Civil industry and the Electronic Industry.
+
+## Lab 9 - Neural Style Transfer
+
+In this lab, you will build a model to generate one image in the art style of the other. In this example, you will apply the art style of Van Gogh's 'A Starrty Night' to a painting of Paris. On a higher level, one model first learns the 'art' features of an image and uses it to reconstruct a base image so that it is similar to the base image but with the style of the different image. This concept is becoming quite popular for reviving dead characters by making the model mimic their behaviour.
+
+## Lab 10 - Getting Started with Pytorch
+
+In this lab, you will learn how to generate a simple model in Pytorch.
+
+## Lab 11 - Transfer Learning
+
+In this lab, you will again perform the task of image classification, but with a limited dataset. You will use models which are pre-trained on similar tasks and fine tune them to learn the required data. In this example, you will use Pytorch to fine tune the ResNet to classify between bees and ants. tthe ResNet has been trained for multi-class image classification on the ImageNet dataset but labels like 'ants' or 'bees' were not seen by the model during training. Thus, this technique of fine tning pre-trained models in the absence of a large amount of data is known as transfer learning.
+
+## Lab 12 - DCGANs
+
+In this lab, you will build a generative adversarial network(or GAN) known as DCGAN. You will teach the model how to generate faces of celebrities by showing it the faces of real celebrities. Generative networks find applications in tasks like creating cartoons, generating artificial data for training other models, applications like face aging, 3D object generation and so on. As a fun exercise, you can try feeding it some images of yourself and see what the model outputs.
+
+Note that while some examples are done in Keras and some in Pytorch, both are quite powerful platforms. Each of the examples can be done in either of the two. This is an optional part but it is highly encouraged to try out different problems using the different platforms to get a know-how of how they can be used for building different kinds of models
